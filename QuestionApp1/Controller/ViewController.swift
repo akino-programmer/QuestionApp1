@@ -12,12 +12,42 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var imageView:UIImageView!
     
+    @IBOutlet weak var maxScoreLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        
+        
     }
 
+    @IBAction func answer(_ sender: Any) {
+        
+        if (sender as AnyObject).tag == 1{
+            
+            //丸ボタンが押された時
+            
+            //ユーザーが押したボタンが丸ボタンだった
+            
+            //円ボタンの音声を流す
+            
+            
+        }else if (sender as AnyObject).tag == 2 {
+            
+            //✖︎ボタンが押された時
+            
+            //ユーザーが押したボタンが✖︎ボタンだった
+            
+            //✖︎ボタンの音声を流す
+            
+            
+        }
+        
+        
+    }
+    
+    
+    
 
 }
 
