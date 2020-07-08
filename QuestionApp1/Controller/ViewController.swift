@@ -14,6 +14,11 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var maxScoreLabel: UILabel!
     
+    let imagesList = ImagesList()
+    
+    //IBActionで検知した正答をがどちらなのかを取得する変数
+    var pickedAnswer = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -34,7 +39,11 @@ class ViewController: UIViewController {
             
         }else if (sender as AnyObject).tag == 2 {
             
+            
+            pickedAnswer = false
             //✖︎ボタンが押された時
+            
+            
             
             //ユーザーが押したボタンが✖︎ボタンだった
             
@@ -42,6 +51,9 @@ class ViewController: UIViewController {
             
             
         }
+        
+        //チェック　解答があっているか（pickedAnswerとImagesListのcorrectORNotの値が一致しているか）
+        
         
         
     }
