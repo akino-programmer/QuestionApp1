@@ -14,6 +14,11 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var maxScoreLabel: UILabel!
     
+    var corrrectCount = 0
+    var wrongCount = 0
+    var maxScore = 0
+    var questionNumber = 0
+    
     let imagesList = ImagesList()
     
     //IBActionで検知した正答をがどちらなのかを取得する変数
@@ -25,6 +30,18 @@ class ViewController: UIViewController {
         
         
     }
+    
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+          corrrectCount = 0
+          wrongCount = 0
+          questionNumber = 0
+        
+        imageView.image = 
+    }
+    
 
     @IBAction func answer(_ sender: Any) {
         
