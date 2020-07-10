@@ -39,7 +39,9 @@ class ViewController: UIViewController {
           wrongCount = 0
           questionNumber = 0
         
-        imageView.image = 
+        imageView.image = UIImage(named: imagesList.list[0].imageText)
+        
+        
     }
     
 
@@ -47,6 +49,10 @@ class ViewController: UIViewController {
         
         if (sender as AnyObject).tag == 1{
             
+             pickedAnswer = true
+            
+            
+           
             //丸ボタンが押された時
             
             //ユーザーが押したボタンが丸ボタンだった
@@ -70,11 +76,40 @@ class ViewController: UIViewController {
         }
         
         //チェック　解答があっているか（pickedAnswerとImagesListのcorrectORNotの値が一致しているか）
-        
+        check()
         
         
     }
     
+    func check(){
+        
+        let correctAnswer = imagesList.list[0].answer
+        if correctAnswer == pickedAnswer{
+            
+            print("正解")
+            corrrectCount = corrrectCount + 1
+            
+            
+        }else{
+            
+            print("間違い")
+            wrongCount = wrongCount + 1
+            
+            
+        }
+        
+    }
+    
+    func nextQuestion(){
+        
+        if questionNumber <= 9{
+            
+            questionNumber = questionNumber + 1
+            imageView.image = UIImage(named: imagesList.list[0].imageText)
+            
+        }
+        
+    }
     
     
 
