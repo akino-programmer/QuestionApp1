@@ -96,6 +96,9 @@
                                 <rect key="frame" x="143" y="486" width="128" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="home"/>
+                                <connections>
+                                    <action selector="back:" destination="Fbb-pf-UJu" eventType="touchUpInside" id="EX1-cp-5pg"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="間違った数" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jDJ-8X-ioG">
                                 <rect key="frame" x="48" y="186" width="133" height="44"/>
