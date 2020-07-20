@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E95E4C4024C5DF740072DAC8 /* SoundFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95E4C3F24C5DF740072DAC8 /* SoundFile.swift */; };
 		E96B9F0E24B1FAF100EF23D7 /* batsuSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E96B9F0D24B1FAF100EF23D7 /* batsuSound.mp3 */; };
 		E96B9F1124B1FB0A00EF23D7 /* maruSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E96B9F0F24B1FB0A00EF23D7 /* maruSound.mp3 */; };
 		E96B9F1224B1FB0A00EF23D7 /* sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E96B9F1024B1FB0A00EF23D7 /* sound.mp3 */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E95E4C3F24C5DF740072DAC8 /* SoundFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundFile.swift; sourceTree = "<group>"; };
 		E96B9F0D24B1FAF100EF23D7 /* batsuSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = batsuSound.mp3; sourceTree = "<group>"; };
 		E96B9F0F24B1FB0A00EF23D7 /* maruSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = maruSound.mp3; sourceTree = "<group>"; };
 		E96B9F1024B1FB0A00EF23D7 /* sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sound.mp3; sourceTree = "<group>"; };
@@ -54,6 +56,7 @@
 			children = (
 				E96B9F1824B282DD00EF23D7 /* ImagesModel.swift */,
 				E96B9F1A24B283CD00EF23D7 /* ImagesList.swift */,
+				E95E4C3F24C5DF740072DAC8 /* SoundFile.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -184,6 +187,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E99BAF4724B17DF5000A2DDF /* ViewController.swift in Sources */,
+				E95E4C4024C5DF740072DAC8 /* SoundFile.swift in Sources */,
 				E96B9F1B24B283CD00EF23D7 /* ImagesList.swift in Sources */,
 				E96B9F1724B1FFE500EF23D7 /* NextViewController.swift in Sources */,
 				E99BAF4324B17DF5000A2DDF /* AppDelegate.swift in Sources */,
