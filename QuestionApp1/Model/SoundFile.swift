@@ -17,5 +17,15 @@ class SoundFile{
         
         
        //再生する
+        let soundURL = Bundle.main.url(forResource: fileName, withExtension: extensionName)
+        
+        do {
+         
+            //効果音を鳴らす
+            player = try AVAudioPlayer(contentsOf: soundURL!)
+            
+        } catch <#pattern#> {
+            <#statements#>
+        }
     }
 }
