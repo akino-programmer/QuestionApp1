@@ -26,10 +26,22 @@ class ViewController: UIViewController,NowScoreDelegate {
     //IBActionで検知した正答をがどちらなのかを取得する変数
     var pickedAnswer = false
     
+    var soundFile = SoundFile()
+    
+    var changeColor = ChangeColor()
+    
+    var gradientLayer = CAGradientLayer()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        gradientLayer = changeColor.changeColor(topR:0.07,topG:0.54,topB:0.32,topAlpha:0.36,bottomR:0.76,bottomG:0.12,bottomB:0.74,bottomAlpha:1.0)
         
+        gradientLayer.frame = view.bounds
+        
+        view.layer.insertSublayer(gradientLayer, at: 0)
+        
+        imageView.layer.cornerRadius = 20.0
         
     }
     
@@ -58,6 +70,9 @@ class ViewController: UIViewController,NowScoreDelegate {
         
         if (sender as AnyObject).tag == 1{
             
+//            withOutMP3.playSound(fileName: "maruSound", extensionName: "mp3")
+            soundFile.playSound(fileName: "maruSound", extensionName: "mp3")
+            
              pickedAnswer = true
             
             
@@ -71,7 +86,8 @@ class ViewController: UIViewController,NowScoreDelegate {
             
         }else if (sender as AnyObject).tag == 2 {
             
-            
+            soundFile.playSound(fileName: "batsuSound", extensionName: "mp3")
+
             pickedAnswer = false
             //✖︎ボタンが押された時
             
@@ -131,6 +147,9 @@ class ViewController: UIViewController,NowScoreDelegate {
     }
     
     func nowScore(score: Int) {
+        
+        soundFile.playSound(fileName: "sound", extensionName: "mp3")
+
         maxScoreLabel.text = String(score)
         
        }
