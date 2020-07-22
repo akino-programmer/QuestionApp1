@@ -23,9 +23,11 @@ class SoundFile{
          
             //効果音を鳴らす
             player = try AVAudioPlayer(contentsOf: soundURL!)
+            player?.play()
+        } catch  {
             
-        } catch <#pattern#> {
-            <#statements#>
+            
+            print("エラーです！")
         }
     }
 }

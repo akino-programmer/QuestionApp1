@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E92EBB2F24C87B5900E48025 /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92EBB2E24C87B5900E48025 /* Animal.swift */; };
+		E92EBB3124C87D3B00E48025 /* WithOutMP3.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92EBB3024C87D3B00E48025 /* WithOutMP3.swift */; };
 		E95E4C4024C5DF740072DAC8 /* SoundFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95E4C3F24C5DF740072DAC8 /* SoundFile.swift */; };
 		E96B9F0E24B1FAF100EF23D7 /* batsuSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E96B9F0D24B1FAF100EF23D7 /* batsuSound.mp3 */; };
 		E96B9F1124B1FB0A00EF23D7 /* maruSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E96B9F0F24B1FB0A00EF23D7 /* maruSound.mp3 */; };
@@ -23,6 +25,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E92EBB2E24C87B5900E48025 /* Animal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
+		E92EBB3024C87D3B00E48025 /* WithOutMP3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithOutMP3.swift; sourceTree = "<group>"; };
 		E95E4C3F24C5DF740072DAC8 /* SoundFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundFile.swift; sourceTree = "<group>"; };
 		E96B9F0D24B1FAF100EF23D7 /* batsuSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = batsuSound.mp3; sourceTree = "<group>"; };
 		E96B9F0F24B1FB0A00EF23D7 /* maruSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = maruSound.mp3; sourceTree = "<group>"; };
@@ -57,6 +61,8 @@
 				E96B9F1824B282DD00EF23D7 /* ImagesModel.swift */,
 				E96B9F1A24B283CD00EF23D7 /* ImagesList.swift */,
 				E95E4C3F24C5DF740072DAC8 /* SoundFile.swift */,
+				E92EBB2E24C87B5900E48025 /* Animal.swift */,
+				E92EBB3024C87D3B00E48025 /* WithOutMP3.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -187,10 +193,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				E99BAF4724B17DF5000A2DDF /* ViewController.swift in Sources */,
+				E92EBB2F24C87B5900E48025 /* Animal.swift in Sources */,
 				E95E4C4024C5DF740072DAC8 /* SoundFile.swift in Sources */,
 				E96B9F1B24B283CD00EF23D7 /* ImagesList.swift in Sources */,
 				E96B9F1724B1FFE500EF23D7 /* NextViewController.swift in Sources */,
 				E99BAF4324B17DF5000A2DDF /* AppDelegate.swift in Sources */,
+				E92EBB3124C87D3B00E48025 /* WithOutMP3.swift in Sources */,
 				E99BAF4524B17DF5000A2DDF /* SceneDelegate.swift in Sources */,
 				E96B9F1924B282DD00EF23D7 /* ImagesModel.swift in Sources */,
 			);
